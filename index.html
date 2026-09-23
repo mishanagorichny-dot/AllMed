@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en-IE" data-icons="assets/icons.svg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>AllMed Clinic · GP & specialist care in Dublin 15</title>
+  <meta name="description" content="AllMed Clinic is a general practice at Royal Canal Park, Dublin 15, offering GP care, women's health, physiotherapy, health screening and skin treatments. Open Mon–Fri 8:00–19:00, Sat 8:00–14:00.">
+  <meta name="theme-color" content="#f5f7f5">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preload" href="assets/fonts/hanken-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header site-header--hero">
+    <div class="container">
+      <div class="site-header__bar">
+        <a class="brand" href="index.html" aria-label="AllMed Clinic, home">
+          <img src="assets/img/allmed-logo.png" alt="AllMed Clinic" width="300" height="107">
+        </a>
+        <nav class="nav" aria-label="Main">
+          <ul class="nav__list liquid-glass" role="list">
+            <li><a class="nav__link" href="#services">Services</a></li>
+            <li><a class="nav__link" href="#team">Our team</a></li>
+            <li><a class="nav__link" href="#book">For patients</a></li>
+            <li><a class="nav__link" href="#visit">Visit us</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <a class="header-phone" href="tel:+35315722012" aria-label="Call 01 572 2012">
+            <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>01 572 2012</span>
+          </a>
+          <a class="btn btn--primary btn--sm" href="#book" data-book>Book appointment</a>
+          <button class="menu-toggle liquid-glass" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-toggle>
+            <svg class="icon icon-open" aria-hidden="true"><use href="assets/icons.svg#menu"/></svg>
+            <svg class="icon icon-close" aria-hidden="true"><use href="assets/icons.svg#close"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobile">
+      <ul class="mobile-menu__list" role="list">
+        <li><a href="#services">Services <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a></li>
+        <li><a href="#team">Our team <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a></li>
+        <li><a href="#book">For patients <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a></li>
+        <li><a href="#visit">Visit us <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__foot">
+      <p class="status" data-status><span class="status__dot" aria-hidden="true"></span><span data-status-text>Mon–Fri 8:00–19:00 · Sat 8:00–14:00</span></p>
+      <a class="btn btn--primary btn--lg btn--block" href="#book" data-book>Book an appointment</a>
+      <a class="btn btn--secondary btn--lg btn--block" href="tel:+35315722012">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg>Call 01 572 2012
+      </a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ================= Hero ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__halo">
+          <span class="hero__ring hero__ring--1"></span>
+          <span class="hero__ring hero__ring--2"></span>
+        </div>
+        <canvas class="hero__canvas" data-hero-3d></canvas>
+      </div>
+
+      <div class="container hero__main">
+        <div class="hero__copy">
+          <a class="hero__badge liquid-glass" href="#new-patients">
+            <span class="hero__avatars" aria-hidden="true">
+              <img src="assets/img/general_practice-300x200.jpg" alt="" width="28" height="28">
+              <img src="assets/img/womens_health-300x200.jpg" alt="" width="28" height="28">
+              <img src="assets/img/Physiotherapy-Clinic-300x200.jpg" alt="" width="28" height="28">
+              <img src="assets/img/health_screening-300x200.jpg" alt="" width="28" height="28">
+            </span>
+            <span><strong>New patients</strong> · We’re accepting applications</span>
+            <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg>
+          </a>
+          <h1 class="hero__title" id="hero-title">Care for all your medical needs, <em>in Dublin&nbsp;15.</em></h1>
+          <p class="t-lead hero__lead">A general practice at Royal Canal Park, with high-quality, patient-centred care for the whole family.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#book" data-book>
+              Book an appointment <svg class="icon icon--nudge" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg>
+            </a>
+            <a class="btn btn--glass btn--lg liquid-glass" href="tel:+35315722012">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg>Call 01 572 2012
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__facts">
+        <dl class="hero-stats liquid-glass">
+          <div class="hero-stat" data-status>
+            <span class="hero-stat__icon" aria-hidden="true"><span class="status__dot"></span></span>
+            <dt data-status-detail>Mon–Fri 8:00–19:00</dt>
+            <dd data-status-label>Opening hours</dd>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat__icon" aria-hidden="true">
+              <svg viewBox="0 0 20 20" fill="currentColor"><rect x="8.75" y="0" width="2.5" height="2.5"/><rect x="4.375" y="8.75" width="2.5" height="2.5"/><rect x="8.75" y="8.75" width="2.5" height="2.5"/><rect x="13.125" y="8.75" width="2.5" height="2.5"/><rect x="0" y="17.5" width="2.5" height="2.5"/><rect x="4.375" y="17.5" width="2.5" height="2.5"/><rect x="8.75" y="17.5" width="2.5" height="2.5"/><rect x="13.125" y="17.5" width="2.5" height="2.5"/><rect x="17.5" y="17.5" width="2.5" height="2.5"/></svg>
+            </span>
+            <dt>Services under one roof</dt>
+            <dd>9 services</dd>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat__icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="currentColor"><rect x="0" y="0" width="4" height="4" rx="1"/><rect x="12" y="0" width="4" height="4" rx="1"/><rect x="6" y="6" width="4" height="4" rx="1"/><rect x="0" y="12" width="4" height="4" rx="1"/><rect x="12" y="12" width="4" height="4" rx="1"/></svg>
+            </span>
+            <dt>Royal Canal Park</dt>
+            <dd>Dublin 15</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <!-- ================= Patient tasks ================= -->
+    <section class="tasks-band" aria-labelledby="tasks-title">
+      <div class="container">
+        <h2 id="tasks-title">What do you need today?</h2>
+        <nav class="tasks" aria-labelledby="tasks-title">
+          <a class="task" href="#book" data-book>
+            <svg class="task__icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>
+            <div><p class="task__title">Book an appointment</p><p class="task__desc">GP, nurse, physiotherapy and specialist services.</p></div>
+            <span class="task__go"><span>Book</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></span>
+          </a>
+          <a class="task" href="https://allmedclinic.ie/prescription-request/">
+            <svg class="task__icon" aria-hidden="true"><use href="assets/icons.svg#prescription"/></svg>
+            <div><p class="task__title">Repeat prescription</p><p class="task__desc">For medication we’ve prescribed before. Allow 48 hours.</p></div>
+            <span class="task__go"><span>Request</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></span>
+          </a>
+          <a class="task" href="#new-patients">
+            <svg class="task__icon" aria-hidden="true"><use href="assets/icons.svg#user-plus"/></svg>
+            <div><p class="task__title">Join the practice</p><p class="task__desc">We’re accepting applications from new patients.</p></div>
+            <span class="task__go"><span>Register</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></span>
+          </a>
+          <a class="task" href="#visit">
+            <svg class="task__icon" aria-hidden="true"><use href="assets/icons.svg#pin"/></svg>
+            <div><p class="task__title">Hours &amp; directions</p><p class="task__desc">Royal Canal Park, Dublin 15. Open six days a week.</p></div>
+            <span class="task__go"><span>Find us</span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ================= Services ================= -->
+    <section class="section section--surface" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <h2 id="services-title">Services under one roof</h2>
+          <div class="section-head__aside">
+            <p class="t-lead">Start with your GP, or come to us directly for women’s health, physiotherapy, screening and skin care.</p>
+          </div>
+        </header>
+
+        <div class="svc" data-services>
+          <div class="svc__list">
+            <div class="svc__group">
+              <h3 class="svc__group-title">Everyday care</h3>
+              <ul role="list">
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="true" aria-controls="svc-gp" data-service="general-practice">
+                    <span class="svc__name">General Practice</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-gp"><div><div class="svc__detail-inner">
+                    <img src="assets/img/general_practice.jpg" alt="A GP consultation with an older patient" width="896" height="596" loading="lazy">
+                    <p>Comprehensive primary healthcare for individuals and families of all ages. Our experienced GPs are your first point of contact for everyday medical concerns, providing accurate diagnoses, effective treatment plans, and ongoing health management in a compassionate and confidential environment.</p>
+                    <div class="svc__actions"><a class="btn btn--primary" href="#book" data-book>Book a GP appointment</a></div>
+                  </div></div></div>
+                </li>
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="false" aria-controls="svc-screening" data-service="health-screening">
+                    <span class="svc__name">Health Screening</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-screening"><div><div class="svc__detail-inner">
+                    <img src="assets/img/health_screening.jpg" alt="A doctor checking a patient’s blood pressure" width="896" height="596" loading="lazy">
+                    <p>Screening helps detect potential health issues before they become serious. We offer tailored screening packages to assess cardiovascular risk, diabetes, cancers and other chronic conditions, so you can act early.</p>
+                    <div class="svc__actions"><a class="btn btn--primary" href="#book" data-book>Book a screening</a></div>
+                  </div></div></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="svc__group">
+              <h3 class="svc__group-title">Women &amp; family</h3>
+              <ul role="list">
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="false" aria-controls="svc-womens" data-service="womens-health">
+                    <span class="svc__name">Women’s Health</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-womens"><div><div class="svc__detail-inner">
+                    <img src="assets/img/womens_health.jpg" alt="A doctor in conversation with a female patient" width="896" height="596" loading="lazy">
+                    <p>Specialised care for women at every stage of life, covering menstrual health, hormonal concerns, menopause support, breast health and pelvic health, with a respectful, supportive and discreet approach.</p>
+                    <div class="svc__actions">
+                      <a class="btn btn--primary" href="#book" data-book>Book an appointment</a>
+                      <a class="link" href="services/womens-health.html">About women’s health <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a>
+                    </div>
+                  </div></div></div>
+                </li>
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="false" aria-controls="svc-family" data-service="family-planning">
+                    <span class="svc__name">Family Planning &amp; Antenatal Care</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-family"><div><div class="svc__detail-inner">
+                    <img src="assets/img/family_planning.jpg" alt="Hands forming a circle around paper cut-out family figures" width="896" height="596" loading="lazy">
+                    <p>Contraceptive advice, fertility guidance and pregnancy planning for individuals and couples. During pregnancy, our antenatal care provides continuous monitoring, education and support for a healthy pregnancy.</p>
+                    <div class="svc__actions"><a class="btn btn--primary" href="#book" data-book>Book an appointment</a></div>
+                  </div></div></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="svc__group">
+              <h3 class="svc__group-title">Recovery &amp; support</h3>
+              <ul role="list">
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="false" aria-controls="svc-physio" data-service="physiotherapy">
+                    <span class="svc__name">Physiotherapy Clinic</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-physio"><div><div class="svc__detail-inner">
+                    <img src="assets/img/Physiotherapy-Clinic.jpg" alt="A physiotherapist guiding a patient through an exercise" width="896" height="596" loading="lazy">
+                    <p>Personalised rehabilitation and injury prevention. Whether you’re recovering from surgery, managing chronic pain or improving mobility, our physiotherapists use evidence-based techniques to restore strength, function and confidence.</p>
+                    <div class="svc__actions"><a class="btn btn--primary" href="#book" data-book>Book physiotherapy</a></div>
+                  </div></div></div>
+                </li>
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="false" aria-controls="svc-neuro" data-service="neurodiversity">
+                    <span class="svc__name">Neurodiversity Support</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-neuro"><div><div class="svc__detail-inner">
+                    <img src="assets/img/Neurodiversity-Support.jpg" alt="Children drawing together at a table" width="896" height="596" loading="lazy">
+                    <p>Inclusive, tailored support for neurodivergent people, including those with autism, ADHD and learning differences. We offer assessments, therapy and guidance in a respectful environment that focuses on strengths.</p>
+                    <div class="svc__actions"><a class="btn btn--primary" href="#book" data-book>Book an appointment</a></div>
+                  </div></div></div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="svc__group">
+              <h3 class="svc__group-title">Skin &amp; aesthetics</h3>
+              <ul role="list">
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="false" aria-controls="svc-prp" data-service="prp">
+                    <span class="svc__name">PRP (Platelet Rich Plasma)</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-prp"><div><div class="svc__detail-inner">
+                    <img src="assets/img/prp.jpg" alt="A woman relaxing during a scalp treatment" width="523" height="659" loading="lazy">
+                    <p>PRP uses concentrated platelets from your own blood to promote tissue regeneration. We use it to treat hair thinning, joint pain and skin ageing: a non-surgical option with minimal downtime.</p>
+                    <div class="svc__actions"><a class="btn btn--primary" href="#book" data-book>Book a consultation</a></div>
+                  </div></div></div>
+                </li>
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="false" aria-controls="svc-laser" data-service="laser">
+                    <span class="svc__name">Laser Therapy with Suprana</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-laser"><div><div class="svc__detail-inner">
+                    <img src="assets/img/Laser-Therapy-with-Suprana.jpg" alt="A laser skin treatment in progress" width="896" height="596" loading="lazy">
+                    <p>Suprana laser technology for skin rejuvenation, pigmentation, acne scars and hair removal. A non-invasive treatment with minimal discomfort and downtime, delivered by our certified professionals.</p>
+                    <div class="svc__actions"><a class="btn btn--primary" href="#book" data-book>Book a consultation</a></div>
+                  </div></div></div>
+                </li>
+                <li class="svc__item">
+                  <button class="svc__trigger" type="button" aria-expanded="false" aria-controls="svc-skin" data-service="anti-aging">
+                    <span class="svc__name">Anti-Aging Skin Care</span>
+                    <span class="svc__marker" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#arrow-right"/></svg></span>
+                  </button>
+                  <div class="svc__detail" id="svc-skin"><div><div class="svc__detail-inner">
+                    <img src="assets/img/Anti-Aging-Skin-Care.jpg" alt="A facial skin treatment" width="896" height="596" loading="lazy">
+                    <p>Clinically backed anti-aging treatments tailored to your skin type and goals, from advanced facials and serums to injectable therapies that reduce fine lines and improve skin texture.</p>
+                    <div class="svc__actions"><a class="btn btn--primary" href="#book" data-book>Book a consultation</a></div>
+                  </div></div></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="svc__panel" aria-live="polite">
+            <div class="svc__figure"><img src="assets/img/general_practice.jpg" alt="" width="896" height="596"></div>
+            <div class="svc__body" data-panel-body></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Why AllMed ================= -->
+    <section class="section" id="about" aria-labelledby="why-title">
+      <div class="container">
+        <h2 class="visually-hidden" id="why-title">Why AllMed</h2>
+        <p class="why__statement" data-reveal>One practice for the whole family, <span>from the first check-up to getting back on your feet.</span></p>
+        <div class="why__grid">
+          <figure class="why__photo" data-reveal>
+            <img src="assets/img/health_screening.jpg" alt="A doctor checking a patient’s blood pressure" width="896" height="596" loading="lazy">
+            <figcaption>Unit 2, Meridian Court, Royal Canal Park, Dublin 15</figcaption>
+          </figure>
+          <div class="points">
+            <div class="point" data-reveal>
+              <svg class="point__icon" aria-hidden="true"><use href="assets/icons.svg#sun"/></svg>
+              <h3>Open when life allows</h3>
+              <p>Early starts and evening appointments on weekdays, 8:00 to 19:00, and Saturday mornings from 8:00 to 14:00.</p>
+            </div>
+            <div class="point" data-reveal style="--reveal-delay: 80ms">
+              <svg class="point__icon" aria-hidden="true"><use href="assets/icons.svg#layers"/></svg>
+              <h3>Many needs, one place</h3>
+              <p>GP care alongside women’s health, physiotherapy, neurodiversity support and skin treatments, so your care stays in one place.</p>
+            </div>
+            <div class="point" data-reveal>
+              <svg class="point__icon" aria-hidden="true"><use href="assets/icons.svg#heart"/></svg>
+              <h3>Respectful and discreet</h3>
+              <p>Every consultation takes place in a compassionate and confidential environment, with time to talk things through.</p>
+            </div>
+            <div class="point" data-reveal style="--reveal-delay: 80ms">
+              <svg class="point__icon" aria-hidden="true"><use href="assets/icons.svg#shield"/></svg>
+              <h3>Your records, protected</h3>
+              <p>We follow Medical Council guidelines and the ICGP Data Protection Guideline for GPs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Team ================= -->
+    <section class="section section--sunken" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <h2 id="team-title">The people behind your care</h2>
+          <div class="section-head__aside">
+            <p class="t-lead">Meet the GPs, nurses and physiotherapists at AllMed.</p>
+          </div>
+        </header>
+        <ul class="team" role="list">
+          <li class="team-card" data-reveal>
+            <div class="team-card__portrait">
+              <span class="placeholder-tag">Placeholder</span>
+              <span class="team-card__initials" aria-hidden="true">GP</span>
+            </div>
+            <div>
+              <h3 class="team-card__name">Dr. [Name]</h3>
+              <p class="team-card__role">General Practitioner</p>
+              <p class="team-card__meta">Qualifications and special interests to be added</p>
+            </div>
+          </li>
+          <li class="team-card" data-reveal style="--reveal-delay: 80ms">
+            <div class="team-card__portrait">
+              <span class="placeholder-tag">Placeholder</span>
+              <span class="team-card__initials" aria-hidden="true">PN</span>
+            </div>
+            <div>
+              <h3 class="team-card__name">[Name]</h3>
+              <p class="team-card__role">Practice Nurse</p>
+              <p class="team-card__meta">Qualifications and special interests to be added</p>
+            </div>
+          </li>
+          <li class="team-card" data-reveal style="--reveal-delay: 160ms">
+            <div class="team-card__portrait">
+              <span class="placeholder-tag">Placeholder</span>
+              <span class="team-card__initials" aria-hidden="true">PT</span>
+            </div>
+            <div>
+              <h3 class="team-card__name">[Name]</h3>
+              <p class="team-card__role">Physiotherapist</p>
+              <p class="team-card__meta">Qualifications and special interests to be added</p>
+            </div>
+          </li>
+        </ul>
+        <p class="team-note"><span class="placeholder-tag">Content needed</span> Clinician names, photos and profiles to be supplied by the practice.</p>
+      </div>
+    </section>
+
+    <!-- ================= Booking ================= -->
+    <section class="section" id="book" aria-labelledby="book-title">
+      <div class="container">
+        <div class="booking__grid">
+          <div class="booking__intro" data-reveal>
+            <h2 id="book-title">Booking takes a minute</h2>
+            <p class="t-lead">Choose a service and a time online, or talk to our reception team if you’d rather.</p>
+            <div class="booking__actions">
+              <a class="btn btn--primary btn--lg" href="#book" data-book data-book-online>
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>Book online
+              </a>
+              <a class="btn btn--secondary btn--lg" href="tel:+35315722012">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg>01 572 2012
+              </a>
+            </div>
+          </div>
+          <ol class="steps" role="list">
+            <li class="step" data-reveal>
+              <div class="step__body">
+                <h3>Choose your service</h3>
+                <p>A GP or nurse appointment, physiotherapy, women’s health, screening or a skin consultation.</p>
+              </div>
+            </li>
+            <li class="step" data-reveal>
+              <div class="step__body">
+                <h3>Pick a time that suits you</h3>
+                <p>Weekdays from 8:00 to 19:00, or Saturday mornings. Prefer to talk? Call reception during opening hours.</p>
+              </div>
+            </li>
+            <li class="step" data-reveal>
+              <div class="step__body">
+                <h3>Visit us at Royal Canal Park</h3>
+                <p>Unit 2, Meridian Court, Royal Canal Park, Dublin 15, D15 Y2FV.</p>
+                <a class="link" href="#visit">Directions and opening hours <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="new-patients" id="new-patients" data-reveal>
+          <div>
+            <h3>New to AllMed? We’re accepting new patients.</h3>
+            <p>Complete the registration form and a member of our team will contact you as soon as possible to let you know if we have space. Adults complete their own form; children can be included on a parent’s application.</p>
+          </div>
+          <a class="btn btn--primary btn--lg" href="https://allmedclinic.ie/join-the-practice/">
+            Start registration <svg class="icon icon--nudge" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Testimonial ================= -->
+    <section class="section section--surface" aria-labelledby="reviews-title">
+      <div class="container">
+        <figure class="testimonial" data-reveal>
+          <div class="testimonial__aside">
+            <h2 class="t-h4" id="reviews-title">What patients say</h2>
+            <span class="placeholder-tag">Placeholder: verified review</span>
+          </div>
+          <blockquote>
+            <svg class="testimonial__mark" aria-hidden="true"><use href="assets/icons.svg#quote"/></svg>
+            <p>A short, verified patient review appears here, drawn from the practice’s Google reviews with the patient’s permission.</p>
+            <p class="testimonial__cite">Patient name or initials · Service · Source</p>
+          </blockquote>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-layout">
+        <div class="faq-layout__intro" data-reveal>
+          <h2 id="faq-title">Good to know</h2>
+          <p class="t-lead">Answers to the questions our reception team hears most.</p>
+          <a class="link" href="#visit">Ask us something else <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a>
+        </div>
+        <div class="faq">
+          <details class="faq__item" name="faq">
+            <summary>Are you accepting new patients?<span class="faq__icon" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#plus"/></svg></span></summary>
+            <div class="faq__answer"><p>Yes, we’re currently accepting applications. Complete the online registration form and a member of our team will contact you as soon as possible to let you know if we have space on our list. Submitting the form doesn’t guarantee acceptance.</p></div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Can I register my children?<span class="faq__icon" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#plus"/></svg></span></summary>
+            <div class="faq__answer"><p>Children can be included on a parent’s application. Adults need to complete their own separate form.</p></div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>How do I request a repeat prescription?<span class="faq__icon" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#plus"/></svg></span></summary>
+            <div class="faq__answer">
+              <p>Use our online prescription request for medication we’ve prescribed before. Please allow at least 48 hours, or 72 hours if you request on a Friday. Once approved, we send it to your nominated pharmacy.</p>
+              <p>New medication, changes or other clinical questions need a GP review. <a class="link" href="https://allmedclinic.ie/prescription-request/">Request a prescription</a></p>
+            </div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Why might I need a review or blood test first?<span class="faq__icon" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#plus"/></svg></span></summary>
+            <div class="faq__answer"><p>For your safety, some medication needs more frequent review or blood monitoring. This may mean a GP or nurse appointment before your prescription is renewed.</p></div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>Can I get a sick certificate?<span class="faq__icon" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#plus"/></svg></span></summary>
+            <div class="faq__answer"><p>Sickness certificates are prepared by our team, then checked and signed by your GP. Call reception to arrange one.</p></div>
+          </details>
+          <details class="faq__item" name="faq">
+            <summary>How is my personal information handled?<span class="faq__icon" aria-hidden="true"><svg class="icon"><use href="assets/icons.svg#plus"/></svg></span></summary>
+            <div class="faq__answer"><p>We follow Medical Council guidelines and have signed up to the ICGP Data Protection Guideline for GPs. We only collect what’s needed for your care and keep it secure. <a class="link" href="https://allmedclinic.ie/privacy-policy/">Read our privacy statement</a></p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Visit ================= -->
+    <section class="section section--surface" id="visit" aria-labelledby="visit-title">
+      <div class="container visit">
+        <div class="visit__info" data-reveal>
+          <div class="stack" style="--stack: var(--space-5)">
+            <h2 id="visit-title">Visit the clinic</h2>
+            <p class="status" data-status><span class="status__dot" aria-hidden="true"></span><span data-status-text>Mon–Fri 8:00–19:00 · Sat 8:00–14:00</span></p>
+            <address class="visit__address">Unit 2, Meridian Court<br>Royal Canal Park, Dublin 15<br>D15 Y2FV</address>
+          </div>
+          <table class="hours">
+            <caption class="t-label">Opening hours</caption>
+            <tbody>
+              <tr data-day="Mon"><th scope="row">Monday</th><td>8:00 – 19:00</td></tr>
+              <tr data-day="Tue"><th scope="row">Tuesday</th><td>8:00 – 19:00</td></tr>
+              <tr data-day="Wed"><th scope="row">Wednesday</th><td>8:00 – 19:00</td></tr>
+              <tr data-day="Thu"><th scope="row">Thursday</th><td>8:00 – 19:00</td></tr>
+              <tr data-day="Fri"><th scope="row">Friday</th><td>8:00 – 19:00</td></tr>
+              <tr data-day="Sat"><th scope="row">Saturday</th><td>8:00 – 14:00</td></tr>
+              <tr data-day="Sun"><th scope="row">Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+          <div class="contact-list">
+            <a href="tel:+35315722012"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>01 572 2012</span></a>
+            <a href="mailto:info@allmedclinic.ie"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#mail"/></svg><span>info@allmedclinic.ie</span></a>
+          </div>
+        </div>
+
+        <div class="visit__side">
+          <a class="map" href="https://maps.app.goo.gl/BFiNdk5SZ1y6D3Wo9" target="_blank" rel="noopener" data-reveal>
+            <img src="assets/img/Google_maps.jpg" alt="Map showing AllMed Clinic at Royal Canal Park, Dublin 15" width="1600" height="615" loading="lazy">
+            <span class="map__label">
+              <span class="map__pin"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#pin"/></svg></span>
+              Open in Google Maps
+              <svg class="icon icon--sm" aria-hidden="true"><use href="assets/icons.svg#arrow-up-right"/></svg>
+            </span>
+          </a>
+
+          <div class="message" data-reveal>
+            <div class="stack" style="--stack: var(--space-2)">
+              <h3>Send us a message</h3>
+              <p class="t-muted">For general questions. We’ll reply by email.</p>
+            </div>
+            <form class="form" data-validate novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label for="f-name">Name</label>
+                  <input id="f-name" name="name" type="text" autocomplete="name" aria-describedby="f-name-err">
+                  <p class="field__error" id="f-name-err"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#alert"/></svg><span data-error-text></span></p>
+                </div>
+                <div class="field">
+                  <label for="f-email">Email</label>
+                  <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="f-email-err">
+                  <p class="field__error" id="f-email-err"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#alert"/></svg><span data-error-text></span></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-message">Message</label>
+                <textarea id="f-message" name="message" aria-describedby="f-message-hint f-message-err"></textarea>
+                <p class="field__hint" id="f-message-hint">Please don’t include detailed medical information.</p>
+                <p class="field__error" id="f-message-err"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#alert"/></svg><span data-error-text></span></p>
+              </div>
+              <p class="form__note"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#alert"/></svg><span>Not for urgent medical issues. In an emergency, call 112 or 999.</span></p>
+              <div class="form__foot">
+                <button class="btn btn--primary btn--lg" type="submit"><span>Send message</span></button>
+                <a class="t-small link link--quiet" href="https://allmedclinic.ie/privacy-policy/">How we use your data</a>
+              </div>
+            </form>
+            <div class="form-success" tabindex="-1" role="status">
+              <svg class="icon" aria-hidden="true"><use href="assets/icons.svg#check"/></svg>
+              <h4>Message sent</h4>
+              <p class="t-muted">Thanks for getting in touch. We’ll reply to your email during opening hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Closing CTA ================= -->
+    <section class="section closing" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-band on-field" data-reveal>
+          <div class="cta-band__main">
+            <h2 id="cta-title">Book your next appointment at AllMed.</h2>
+            <p>Book online in a minute, or call our reception team.</p>
+            <div class="cta-band__actions">
+              <a class="btn btn--light btn--lg" href="#book" data-book>Book an appointment <svg class="icon icon--nudge" aria-hidden="true"><use href="assets/icons.svg#arrow-right"/></svg></a>
+              <a class="btn btn--on-field btn--lg" href="tel:+35315722012"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg>01 572 2012</a>
+            </div>
+          </div>
+          <div class="cta-band__hours">
+            <p class="status" data-status><span class="status__dot" aria-hidden="true"></span><span data-status-text>Opening hours</span></p>
+            <dl class="stack" style="--stack: var(--space-2)">
+              <div><dt>Monday – Friday</dt><dd>8:00 – 19:00</dd></div>
+              <div><dt>Saturday</dt><dd>8:00 – 14:00</dd></div>
+              <div><dt>Sunday</dt><dd>Closed</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div class="site-footer__brand">
+          <img src="assets/img/allmed-logo.png" alt="AllMed Clinic" width="300" height="107" loading="lazy">
+          <address>Unit 2, Meridian Court, Royal Canal Park,<br>Dublin 15, D15 Y2FV</address>
+        </div>
+        <nav aria-labelledby="f-services">
+          <h2 id="f-services">Services</h2>
+          <ul role="list">
+            <li><a href="#service-general-practice">General Practice</a></li>
+            <li><a href="services/womens-health.html">Women’s Health</a></li>
+            <li><a href="#service-physiotherapy">Physiotherapy</a></li>
+            <li><a href="#services">All services</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="f-patients">
+          <h2 id="f-patients">Patients</h2>
+          <ul role="list">
+            <li><a href="#book" data-book>Book an appointment</a></li>
+            <li><a href="https://allmedclinic.ie/prescription-request/">Repeat prescription</a></li>
+            <li><a href="#new-patients">Join the practice</a></li>
+            <li><a href="#faq">Questions</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <ul role="list">
+            <li><a href="tel:+35315722012">01 572 2012</a></li>
+            <li><a href="mailto:info@allmedclinic.ie">info@allmedclinic.ie</a></li>
+            <li><span>Mon–Fri 8:00–19:00</span></li>
+            <li><span>Sat 8:00–14:00 · Sun closed</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__legal">
+        <p>© 2026 All Med Clinic · <a href="https://allmedclinic.ie/privacy-policy/">Privacy statement</a></p>
+        <p>Redesign concept · UI/UX case study prototype</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Phone action bar -->
+  <nav class="action-bar" aria-label="Quick actions">
+    <a href="tel:+35315722012"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg>Call</a>
+    <a href="https://maps.app.goo.gl/BFiNdk5SZ1y6D3Wo9" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#pin"/></svg>Directions</a>
+    <a class="is-primary" href="#book" data-book><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar"/></svg>Book</a>
+  </nav>
+</body>
+</html>
