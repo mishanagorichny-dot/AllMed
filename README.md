@@ -1,32 +1,67 @@
-# AllMed Clinic: redesign prototype
+# AllMed Clinic: redesign concept
 
-This is a UI/UX case study: a homepage and one service page (Women's Health), built as static HTML/CSS/JS with no build step.
+A UI/UX case study prototype: a homepage and a Women's Health service page, built with static HTML, CSS and JavaScript. There is no framework and no build step.
 
-## Run
-ES modules need a local server; opening the file directly (`file://`) won't work.
+**Pages**
+- `/`: the homepage (liquid-glass hero with a rotating 3D head and brain)
+- `/services/womens-health`: the service page template
+
+## Run locally
 
     python3 -m http.server 4173
 
-Then open http://localhost:4173
+Then open http://localhost:4173. A server is required because ES modules don't load from `file://`.
 
-## Contents
-- `index.html`: the homepage (liquid-glass hero with a rotating 3D head and brain).
-- `services/womens-health.html`: the service page template.
-- `assets/css/main.css`: the stylesheet entry, using cascade layers (tokens → base → components → pages).
-- `assets/css/tokens.css`: design tokens (colour, type, space, radius, motion).
-- `assets/css/components/`: one file per component.
-- `assets/js/`: `config.js` (hours, booking URL) and `modules/` (header, status, services, booking, form, reveal, toast, hero-3d).
-- `assets/icons.svg`: the icon sprite.
-- `assets/img/`: clinic photography and logo (taken from allmedclinic.ie).
-- `assets/fonts/`: Hanken Grotesk variable font, Latin + Latin Extended subsets (SIL Open Font License).
-- `assets/vendor/three.module.min.js`: Three.js r169 (MIT licence), used by the 3D hero.
-- `DESIGN.md`: the design system reference.
-- `CASE-STUDY.md`: audit, information architecture, design direction and decisions.
-- `PRODUCT.md`: product context.
+## Deploy: GitHub → Vercel
+
+### 1. Put it on GitHub
+
+**Option A, in the browser (no Git needed)**
+1. Go to github.com and choose **New repository**. Name it (e.g. `allmed-clinic-redesign`), keep it Public or Private, and don't add a README.
+2. On the empty repo page, click **uploading an existing file**.
+3. Drag in **everything inside this folder**, not the folder itself. That includes the hidden files `.gitignore` and `vercel.json`: press `Cmd+Shift+.` in Finder to show them.
+4. Click **Commit changes**.
+
+**Option B, with Git in Terminal**
+
+    cd allmed-clinic-redesign
+    git init
+    git add .
+    git commit -m "AllMed Clinic redesign prototype"
+    git branch -M main
+    git remote add origin https://github.com/<your-username>/allmed-clinic-redesign.git
+    git push -u origin main
+
+### 2. Deploy on Vercel
+1. Go to vercel.com, sign in with GitHub, and choose **Add New… → Project**.
+2. **Import** the `allmed-clinic-redesign` repository.
+3. Set the Framework Preset to **Other**. Leave Build Command and Output Directory **empty**, and leave Root Directory as `./`.
+4. Click **Deploy**. You get a link like `https://allmed-clinic-redesign.vercel.app`.
+
+Every later push to `main` redeploys automatically. `vercel.json` gives clean URLs (no `.html`) and long-term caching for fonts, images and Three.js.
+
+## Project structure
+
+    index.html                    Homepage
+    services/womens-health.html   Service page template
+    assets/css/main.css           Stylesheet entry (cascade layers: tokens → base → components → pages)
+    assets/css/tokens.css         Design tokens: colour, type, space, radius, motion
+    assets/css/fonts.css          Self-hosted font faces
+    assets/css/components/        One file per component (20)
+    assets/css/pages/             Page composition
+    assets/js/config.js           Clinic facts: opening hours, booking URL
+    assets/js/modules/            header, status, services, booking, form, reveal, toast, hero-3d
+    assets/icons.svg              Icon sprite
+    assets/img/                   Clinic photography and logo
+    assets/fonts/                 Hanken Grotesk (variable, woff2)
+    assets/vendor/                Three.js r169
+    DESIGN.md                     Design system reference
+    CASE-STUDY.md                 Audit, IA, design direction, decisions
+    PRODUCT.md                    Product context
 
 ## Notes
-- Fully self-contained: no external requests are needed to render the site, so it works offline.
+- Fully self-contained: no external requests are needed to render.
 - The only outside links are real destinations: the clinic's prescription and registration forms, its privacy statement, and Google Maps.
-- The clinic photos are 896px wide; supply higher-resolution originals for production.
 - Clinician profiles and testimonials are marked placeholders.
 - Set `bookingUrl` in `assets/js/config.js` to the clinic's online booking link.
+- The photos and logo belong to AllMed Clinic; see THIRD_PARTY_NOTICES.md.
