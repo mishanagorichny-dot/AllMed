@@ -1,0 +1,23 @@
+/* Testimonial: one large editorial quote. Placeholder until verified reviews exist. */
+
+.testimonial {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  gap: var(--space-8) var(--space-16);
+  align-items: start;
+}
+.testimonial__mark { width: 2.75rem; height: 2.75rem; color: var(--canal-200); }
+.testimonial blockquote { margin: 0; display: grid; gap: var(--space-8); }
+.testimonial blockquote p:not(.testimonial__cite) {
+  font-size: clamp(1.625rem, 1.2rem + 1.8vw, 2.75rem);
+  font-weight: var(--fw-light);
+  line-height: 1.2;
+  letter-spacing: -0.028em;
+  text-wrap: balance;
+}
+.testimonial__cite { display: flex; align-items: center; gap: var(--space-4); color: var(--color-text-muted); font-size: var(--fs-small); }
+.testimonial__aside { display: grid; gap: var(--space-4); justify-items: start; }
+
+@media (max-width: 860px) {
+  .testimonial { grid-template-columns: 1fr; }
+}

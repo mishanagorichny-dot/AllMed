@@ -1,0 +1,18 @@
+/* Booking card: sticky companion on service pages. */
+
+.booking-card {
+  position: sticky;
+  top: calc(var(--header-h) + var(--space-8));
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+.booking-card h2 { font-size: var(--fs-h4); font-weight: var(--fw-medium); letter-spacing: -0.014em; }
+.booking-card__actions { display: grid; gap: var(--space-3); }
+.booking-card__meta { display: grid; gap: var(--space-3); padding-top: var(--space-5); border-top: 1px solid var(--color-line); font-size: var(--fs-small); color: var(--color-text-muted); }
+.booking-card__meta div { display: grid; grid-template-columns: auto 1fr; gap: var(--space-3); }
+.booking-card__meta .icon { color: var(--color-accent); width: 1.125rem; height: 1.125rem; margin-top: 0.1em; }
+.booking-card__meta span { font-variant-numeric: tabular-nums; }

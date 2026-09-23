@@ -1,0 +1,44 @@
+/* Closing CTA: the one deep-canal field on the page. */
+
+.cta-band {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: var(--space-12) var(--space-16);
+  align-items: end;
+  padding: clamp(2.5rem, 1.5rem + 5vw, 6rem);
+  border-radius: var(--radius-lg);
+  background: var(--color-field);
+  color: var(--color-on-field);
+  overflow: hidden;
+  isolation: isolate;
+}
+/* Water-light: a slow, low-contrast shimmer across the field */
+.cta-band::before {
+  content: "";
+  position: absolute; inset: -20%;
+  z-index: -1;
+  background:
+    radial-gradient(40% 35% at 80% 20%, rgb(80 170 160 / 0.22), transparent 70%),
+    radial-gradient(35% 30% at 15% 90%, rgb(40 130 125 / 0.2), transparent 70%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .cta-band::before { animation: water-light 18s var(--ease-in-out) infinite alternate; }
+}
+@keyframes water-light { to { translate: -6% 4%; } }
+
+.cta-band h2 { color: #fff; max-width: 14ch; }
+.cta-band p { color: var(--color-on-field-muted); max-width: 30rem; }
+.cta-band__main { display: grid; gap: var(--space-6); }
+.cta-band__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); padding-top: var(--space-2); }
+.cta-band__hours { display: grid; gap: var(--space-3); padding-top: var(--space-5); border-top: 1px solid rgb(238 246 243 / 0.2); font-variant-numeric: tabular-nums; }
+.cta-band__hours div { display: flex; justify-content: space-between; gap: var(--space-4); color: var(--color-on-field-muted); }
+.cta-band__hours dt { color: var(--color-on-field); }
+.cta-band__hours dd { margin: 0; }
+.cta-band .status { color: var(--color-on-field); }
+.cta-band .status.is-open .status__dot { background: #6fd3a4; }
+.cta-band .status.is-open .status__dot::after { border-color: #6fd3a4; }
+
+@media (max-width: 860px) {
+  .cta-band { grid-template-columns: 1fr; }
+}

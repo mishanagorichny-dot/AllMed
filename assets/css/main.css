@@ -1,0 +1,35 @@
+/* ==========================================================================
+   AllMed Clinic — stylesheet entry
+   Cascade layers keep precedence explicit: tokens < base < components < pages.
+   (No build step for the prototype; bundle these imports for production.)
+   ========================================================================== */
+@layer tokens, base, components, pages;
+
+@import url("fonts.css");
+
+@import url("tokens.css") layer(tokens);
+@import url("base.css") layer(base);
+
+@import url("components/button.css") layer(components);
+@import url("components/header.css") layer(components);
+@import url("components/section-head.css") layer(components);
+@import url("components/status.css") layer(components);
+@import url("components/tasks.css") layer(components);
+@import url("components/service-index.css") layer(components);
+@import url("components/points.css") layer(components);
+@import url("components/team-card.css") layer(components);
+@import url("components/steps.css") layer(components);
+@import url("components/testimonial.css") layer(components);
+@import url("components/faq.css") layer(components);
+@import url("components/visit.css") layer(components);
+@import url("components/form.css") layer(components);
+@import url("components/cta-band.css") layer(components);
+@import url("components/footer.css") layer(components);
+@import url("components/breadcrumb.css") layer(components);
+@import url("components/booking-card.css") layer(components);
+@import url("components/placeholder.css") layer(components);
+@import url("components/toast.css") layer(components);
+@import url("components/liquid-glass.css") layer(components);
+
+@import url("pages/home.css") layer(pages);
+@import url("pages/service.css") layer(pages);

@@ -1,0 +1,27 @@
+/* Toast: short, non-blocking confirmation (polite live region). */
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(var(--space-6) + env(safe-area-inset-bottom));
+  z-index: 70;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  width: min(28rem, calc(100vw - 2rem));
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--ink-900);
+  color: var(--stone-50);
+  box-shadow: var(--shadow-lift);
+  font-size: var(--fs-small);
+  translate: -50% 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: translate var(--dur-base) var(--ease-out), opacity var(--dur-base) var(--ease-out), visibility 0s linear var(--dur-base);
+}
+.toast.is-visible { translate: -50% 0; opacity: 1; visibility: visible; transition-delay: 0s; }
+.toast .icon { color: #8fdcc0; margin-top: 0.1em; }
+@media (max-width: 760px) {
+  .toast { bottom: calc(5.25rem + env(safe-area-inset-bottom)); }
+}

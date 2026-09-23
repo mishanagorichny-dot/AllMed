@@ -1,0 +1,56 @@
+/* Forms: visible labels above fields, 16px+ text (no iOS zoom), inline errors
+   that name the problem and the fix, a clear success state. */
+
+.form { display: grid; gap: var(--space-5); }
+.form__row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5); }
+.field { display: grid; gap: var(--space-2); }
+.field label { font-size: var(--fs-label); font-weight: var(--fw-medium); }
+.field__hint { font-size: var(--fs-caption); color: var(--color-text-subtle); }
+.field input, .field textarea, .field select {
+  width: 100%;
+  min-height: 3.25rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: 1.0625rem;
+  transition: border-color var(--dur-fast), box-shadow var(--dur-fast);
+}
+.field textarea { min-height: 8.5rem; resize: vertical; line-height: 1.5; }
+.field input::placeholder, .field textarea::placeholder { color: var(--color-text-subtle); opacity: 1; }
+.field input:hover, .field textarea:hover { border-color: var(--stone-500); }
+.field input:focus-visible, .field textarea:focus-visible {
+  outline: none;
+  border-color: var(--color-focus);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-focus) 22%, transparent);
+}
+.field__error { display: none; align-items: center; gap: var(--space-2); font-size: var(--fs-caption); color: var(--color-danger); font-weight: var(--fw-medium); }
+.field__error .icon { width: 1rem; height: 1rem; }
+.field.is-invalid input, .field.is-invalid textarea { border-color: var(--color-danger); background: var(--color-danger-soft); }
+.field.is-invalid .field__error { display: flex; }
+
+.form__note {
+  display: flex; gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-sunken);
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+.form__note .icon { color: var(--color-text); margin-top: 0.15em; }
+.form__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); }
+
+.form-success {
+  display: none;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  border-radius: var(--radius-md);
+  background: var(--color-accent-soft);
+}
+.form-success .icon { width: 1.75rem; height: 1.75rem; color: var(--canal-800); }
+.form.is-sent { display: none; }
+.form.is-sent + .form-success { display: grid; }
+
+@media (max-width: 600px) {
+  .form__row { grid-template-columns: 1fr; }
+}

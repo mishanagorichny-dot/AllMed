@@ -1,0 +1,16 @@
+/* Placeholder tag: marks content the practice must supply (clinicians, reviews).
+   Deliberately visible so nothing unverified can pass as real. */
+
+.placeholder-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border: 1px dashed var(--stone-500);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--color-surface) 80%, transparent);
+  color: var(--color-text-muted);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+  line-height: 1.2;
+}
